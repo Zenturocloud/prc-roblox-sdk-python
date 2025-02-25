@@ -9,7 +9,7 @@ A simple, intuitive Python SDK for interacting with the Police Roleplay Communit
 """
 
 __title__ = 'prc_sdk'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 __author__ = 'zenturocloud'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2025 zenturocloud'
