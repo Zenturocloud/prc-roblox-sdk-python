@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="prc_sdk",
-    version="0.1.0",
+    version="0.1.1",
     author="zenturocloud",
     author_email="info@zenturo.cloud",
     description="A Python SDK for interacting with the PRC API",
