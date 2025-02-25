@@ -17,7 +17,7 @@ A simple, intuitive Python SDK for interacting with the Police Roleplay Communit
 ## 🚀 Installation
 
 ```bash
-pip install prc-sdk
+pip install prc_sdk
 ```
 
 ## 🔑 Authentication
