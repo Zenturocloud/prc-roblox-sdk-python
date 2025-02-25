@@ -9,7 +9,7 @@ A simple, intuitive Python SDK for interacting with the Police Roleplay Communit
 """
 
 __title__ = 'prc_sdk'
-__version__ = '0.1.1'
+__version__ = '0.1.2'  
 __author__ = 'zenturocloud'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2025 zenturocloud'
@@ -40,32 +40,32 @@ from .utils import (
 )
 
 __all__ = [
-    
+   
     'PrcClient',
     'RateLimitBehavior',
     
-    
+    # Models - Server
     'ServerStatus',
     'Vehicle',
     'CommandResponse',
     
-    
+    # Models - Player
     'Player',
     
-   
+    # Models - Logs
     'JoinLog',
     'KillLog',
     'CommandLog',
     'ModCall',
     
-    
+    # Errors
     'PrcError',
     'PrcApiError',
     'PrcConnectionError',
     'PrcRateLimitError',
     'PrcAuthenticationError',
     
-    
+    # Utils
     'timestamp_to_datetime',
     'datetime_to_timestamp',
     'extract_player_info',
