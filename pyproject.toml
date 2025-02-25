@@ -2,6 +2,9 @@
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools]
+package-dir = {"" = "prc_sdk"}  # Updated: Changed from "src" to "prc_sdk"
+
 [project]
 name = "prc-sdk"
 version = "0.1.0"
@@ -14,7 +17,7 @@ license = {text = "MIT"}
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.8", 
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "License :: OSI Approved :: MIT License",
@@ -29,5 +32,5 @@ dependencies = [
 requires-python = ">=3.7"
 
 [project.urls]
-"Homepage" = "https://github.com/zenturocloud/prc-sdk"
-"Bug Tracker" = "https://github.com/zenturocloud/prc-sdk/issues"
+"Homepage" = "https://github.com/zenturocloud/prc-roblox-sdk-python"
+"Bug Tracker" = "https://github.com/zenturocloud/prc-roblox-sdk-python/issues"
