@@ -6,7 +6,7 @@ import time
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 
-from src import (
+from prc_sdk import (
     PrcClient, 
     RateLimitBehavior, 
     PrcApiError, 
