@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 package-dir = {"" = "prc_sdk"}  # Updated: Changed from "src" to "prc_sdk"
 
 [project]
-name = "prc-sdk"
+name = "prc_sdk"
 version = "0.1.0"
 description = "A Python SDK for interacting with the PRC API"
 readme = "README.md"
