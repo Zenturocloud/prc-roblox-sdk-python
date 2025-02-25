@@ -45,7 +45,7 @@ The PRC SDK provides three different ways to handle rate limits:
 ### 1. Wait and Retry (Default)
 
 ```python
-from src import PrcClient, RateLimitBehavior
+from prc_sdk import PrcClient, RateLimitBehavior
 
 client = PrcClient(
     server_key="your-server-key",
@@ -63,7 +63,7 @@ This is the most convenient option as it handles rate limits transparently.
 ### 2. Raise Exception
 
 ```python
-from src import PrcClient, RateLimitBehavior
+from prc_sdk import PrcClient, RateLimitBehavior
 
 client = PrcClient(
     server_key="your-server-key",
@@ -92,7 +92,7 @@ except PrcRateLimitError as e:
 ### 3. Return Error
 
 ```python
-from src import PrcClient, RateLimitBehavior
+from prc_sdk import PrcClient, RateLimitBehavior
 
 client = PrcClient(
     server_key="your-server-key",
@@ -122,7 +122,7 @@ else:
 You can configure rate limit behavior when creating the client:
 
 ```python
-from src import PrcClient, RateLimitBehavior
+from prc_sdk import PrcClient, RateLimitBehavior
 
 client = PrcClient(
     server_key="your-server-key",
