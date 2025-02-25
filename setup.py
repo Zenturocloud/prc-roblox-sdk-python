@@ -11,9 +11,9 @@ setup(
     description="A Python SDK for interacting with the PRC API",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/zenturocloud/prc-sdk",
+    url="https://github.com/zenturocloud/prc-roblox-sdk-python",
     project_urls={
-        "Bug Tracker": "https://github.com/zenturocloud/prc-sdk/issues",
+        "Bug Tracker": "https://github.com/zenturocloud/prc-roblox-sdk-python/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -26,8 +26,8 @@ setup(
         "Intended Audience :: Developers",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
+    package_dir={"": "prc_sdk"},  # Updated: Changed from "src" to "prc_sdk"
+    packages=find_packages(where="prc_sdk"),  # Updated: Changed from "src" to "prc_sdk"
     python_requires=">=3.7",
     install_requires=[
         "requests>=2.25.0",
