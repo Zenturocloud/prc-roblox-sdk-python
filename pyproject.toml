@@ -7,7 +7,7 @@ package-dir = {"" = "prc_sdk"}  # Updated: Changed from "src" to "prc_sdk"
 
 [project]
 name = "prc_sdk"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Python SDK for interacting with the PRC API"
 readme = "README.md"
 authors = [
