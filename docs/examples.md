@@ -19,7 +19,7 @@ This document provides examples of how to use the PRC SDK for common tasks.
 Install the PRC SDK using pip:
 
 ```bash
-pip install prc-sdk
+pip install prc_sdk
 ```
 
 ## Basic Client Setup
@@ -27,7 +27,7 @@ pip install prc-sdk
 Import the PRC SDK and initialize a client:
 
 ```python
-from src import PrcClient
+from prc_sdk import PrcClient
 
 # Initialize with your server key
 client = PrcClient(server_key="your-server-key-here")
@@ -212,7 +212,7 @@ response = client.execute_command(":warn PlayerName Please follow the rules")
 Handle errors that might occur when using the SDK:
 
 ```python
-from src import PrcClient, PrcApiError, PrcRateLimitError, PrcConnectionError, PrcAuthenticationError
+from prc_sdk import PrcClient, PrcApiError, PrcRateLimitError, PrcConnectionError, PrcAuthenticationError
 
 client = PrcClient(server_key="your-server-key-here")
 
@@ -243,7 +243,7 @@ except PrcApiError as e:
 Configure how the client handles rate limits:
 
 ```python
-from src import PrcClient, RateLimitBehavior
+from prc_sdk import PrcClient, RateLimitBehavior
 
 # Wait and retry automatically (default)
 client = PrcClient(
@@ -267,7 +267,7 @@ client = PrcClient(
 When using `RAISE_EXCEPTION`, handle the rate limit exception:
 
 ```python
-from src import PrcClient, RateLimitBehavior, PrcRateLimitError
+from prc_sdk import PrcClient, RateLimitBehavior, PrcRateLimitError
 
 client = PrcClient(
     server_key="your-server-key",
@@ -287,7 +287,7 @@ except PrcRateLimitError as e:
 When using `RETURN_ERROR`, check the response for errors:
 
 ```python
-from src import PrcClient, RateLimitBehavior
+from prc_sdk import PrcClient, RateLimitBehavior
 
 client = PrcClient(
     server_key="your-server-key",
