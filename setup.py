@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="prc_sdk",
-    version="0.1.1",
+    name="prc_sdk",  
+    version="0.1.2",  
     author="zenturocloud",
     author_email="info@zenturo.cloud",
     description="A Python SDK for interacting with the PRC API",
@@ -26,8 +26,7 @@ setup(
         "Intended Audience :: Developers",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
-    package_dir={"": "prc_sdk"},  # Updated: Changed from "src" to "prc_sdk"
-    packages=find_packages(where="prc_sdk"),  # Updated: Changed from "src" to "prc_sdk"
+    packages=["prc_sdk", "prc_sdk.models"],  
     python_requires=">=3.7",
     install_requires=[
         "requests>=2.25.0",
