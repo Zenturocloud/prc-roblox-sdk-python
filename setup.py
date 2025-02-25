@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="prc-sdk",
+    name="prc_sdk",
     version="0.1.0",
     author="zenturocloud",
     author_email="info@zenturo.cloud",
