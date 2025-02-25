@@ -141,7 +141,7 @@ Returns: A `CommandResponse` object.
 An enum defining how the client should behave when hitting rate limits.
 
 ```python
-from src import RateLimitBehavior
+from prc_sdk import RateLimitBehavior
 
 # Wait and retry automatically (default)
 behavior = RateLimitBehavior.WAIT_AND_RETRY
@@ -302,7 +302,7 @@ Exception raised for authentication errors.
 Convert a Unix timestamp to a datetime object.
 
 ```python
-from src import timestamp_to_datetime
+from prc_sdk import timestamp_to_datetime
 
 dt = timestamp_to_datetime(1704614400)
 ```
@@ -312,7 +312,7 @@ dt = timestamp_to_datetime(1704614400)
 Convert a datetime object to a Unix timestamp.
 
 ```python
-from src import datetime_to_timestamp
+from prc_sdk import datetime_to_timestamp
 from datetime import datetime
 
 ts = datetime_to_timestamp(datetime.now())
@@ -323,7 +323,7 @@ ts = datetime_to_timestamp(datetime.now())
 Extract player name and ID from a player string.
 
 ```python
-from src.utils import extract_player_info
+from prc_sdk.utils import extract_player_info
 
 info = extract_player_info("PlayerName:123456")
 # info = {"name": "PlayerName", "id": "123456"}
@@ -334,7 +334,7 @@ info = extract_player_info("PlayerName:123456")
 Format a datetime object as a string.
 
 ```python
-from src import format_datetime
+from prc_sdk import format_datetime
 from datetime import datetime
 
 formatted = format_datetime(datetime.now())
